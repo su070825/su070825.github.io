@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>如果思念也有声音index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+.s6 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+如果思念也有声音index.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">温馨提醒！！</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s4">/* 弹窗样式：固定定位、悬浮在页面上方 */</span>
+        <span class="s1">.</span><span class="s0">tip-box </span><span class="s1">{</span>
+            <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s5">280</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s5">60</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s5">10</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">background</span><span class="s1">: </span><span class="s3">lightblue</span><span class="s1">;</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s5">8</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">box-shadow</span><span class="s1">: </span><span class="s5">0 2</span><span class="s3">px </span><span class="s5">8</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s5">0</span><span class="s1">,</span><span class="s5">0</span><span class="s1">,</span><span class="s5">0</span><span class="s1">,</span><span class="s5">0.2</span><span class="s1">);</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+            <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">justify-content</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s3">&quot;微软雅黑&quot;</span><span class="s1">, </span><span class="s3">sans-serif</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s5">14</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">z-index</span><span class="s1">: </span><span class="s5">9999</span><span class="s1">; </span><span class="s4">/* 确保弹窗在最上层 */</span>
+        <span class="s1">}</span>
+    <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;script&gt;</span>
+    <span class="s6">const </span><span class="s1">tips = [</span><span class="s3">&quot;要天天开心！！&quot;</span><span class="s1">, </span><span class="s3">&quot;不可以不吃饭！&quot;</span><span class="s1">, </span><span class="s3">&quot;我很想很想你&quot;</span><span class="s1">, </span><span class="s3">&quot;我想见面&quot;</span><span class="s1">, </span><span class="s3">&quot;要放假啦&quot;</span><span class="s1">, </span><span class="s3">&quot;要早点睡觉！！&quot;</span><span class="s1">, </span><span class="s3">&quot;一切都会变好哒&quot;</span><span class="s1">, </span><span class="s3">&quot;明年一定见&quot;</span><span class="s1">, </span><span class="s3">&quot;我比你想象的还要在乎你&quot;</span><span class="s1">, </span><span class="s3">&quot;要好好照顾自己呢！&quot;</span><span class="s1">, </span><span class="s3">&quot;平安&quot;</span><span class="s1">,</span>
+        <span class="s3">&quot;要相信自己嗷&quot;</span><span class="s1">, </span><span class="s3">&quot;我在天津很想你&quot;</span><span class="s1">, </span><span class="s3">&quot;想我了嘛&quot;</span><span class="s1">, </span><span class="s3">&quot;顺顺利利！！&quot;</span><span class="s1">, </span><span class="s3">&quot;烦恼消失！！&quot;</span><span class="s1">];</span>
+    <span class="s6">const </span><span class="s1">bgColors = [</span><span class="s3">&quot;skyblue&quot;</span><span class="s1">, </span><span class="s3">&quot;lightgreen&quot;</span><span class="s1">, </span><span class="s3">&quot;lightyellow&quot;</span><span class="s1">, </span><span class="s3">&quot;pink&quot;</span><span class="s1">];</span>
+    <span class="s6">const </span><span class="s1">tipElements = [];</span>
+    <span class="s6">function </span><span class="s1">createTip() {</span>
+        <span class="s6">const </span><span class="s1">tipBox = document.createElement(</span><span class="s3">&quot;div&quot;</span><span class="s1">);</span>
+        <span class="s1">tipBox.className = </span><span class="s3">&quot;tip-box&quot;</span><span class="s1">;</span>
+        <span class="s6">const </span><span class="s1">tip = tips[Math.floor(Math.random() * tips.length)];</span>
+        <span class="s6">const </span><span class="s1">bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];</span>
+        <span class="s1">tipBox.textContent = tip;</span>
+        <span class="s1">tipBox.style.background = bgColor;</span>
+        <span class="s6">const </span><span class="s1">maxX = window.innerWidth - tipBox.offsetWidth;</span>
+        <span class="s6">const </span><span class="s1">maxY = window.innerHeight - tipBox.offsetHeight;</span>
+        <span class="s6">const </span><span class="s1">x = Math.floor(Math.random() * maxX);</span>
+        <span class="s6">const </span><span class="s1">y = Math.floor(Math.random() * maxY);</span>
+        <span class="s1">tipBox.style.left = </span><span class="s3">`</span><span class="s1">${x}</span><span class="s3">px`</span><span class="s1">;</span>
+        <span class="s1">tipBox.style.top = </span><span class="s3">`</span><span class="s1">${y}</span><span class="s3">px`</span><span class="s1">;</span>
+        <span class="s1">document.body.appendChild(tipBox);</span>
+        <span class="s1">tipElements.push(tipBox);</span>
+        <span class="s1">}</span>
+    <span class="s6">function </span><span class="s1">closeAllTips() {</span>
+            <span class="s1">tipElements.forEach(el =&gt; el.remove());</span>
+        <span class="s1">}</span>
+    <span class="s1">document.addEventListener(</span><span class="s3">&quot;keydown&quot;</span><span class="s1">, (e) =&gt; {</span>
+        <span class="s6">if </span><span class="s1">(e.code === </span><span class="s3">&quot;Space&quot;</span><span class="s1">) {</span>
+            <span class="s1">closeAllTips();</span>
+        <span class="s1">}</span>
+    <span class="s1">});</span>
+    <span class="s6">for </span><span class="s1">(</span><span class="s6">let </span><span class="s1">i = </span><span class="s5">0</span><span class="s1">; i &lt; </span><span class="s5">400</span><span class="s1">; i++) {</span>
+        <span class="s1">setTimeout(createTip, i * </span><span class="s5">50</span><span class="s1">);</span>
+    <span class="s1">}</span>
+    <span class="s0">&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span></pre>
+</body>
+</html>
